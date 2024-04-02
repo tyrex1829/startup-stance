@@ -252,6 +252,102 @@ body{
     color: var(--black-color);
 }
 
+/* story section */
+.story-section{
+    background-color: var(--yellow-bg-color);
+}
+.story{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px 120px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.story-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #000;
+}
+.story-desc{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black-color);
+}
+.other-story{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.story-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 40px;
+}
+.story-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.story-left img{
+    margin: 0 30px;
+}
+.story-left h1{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 27.3px;
+    text-align: center;
+    columns: #111827;
+}
+.story-left p{
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    color: #374151;
+}
+.story-right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+.story-right p{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--black-color);
+}
+
+@media screen and (max-width: 1136px){
+
+    /* story */
+    .story{
+        padding: 80px 60px 80px 60px;
+    }
+    .other-story{
+        flex-direction: column;
+    }
+    .story-div{
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width: 815px) {
     /* nav */
     .nav-logo-text{
@@ -305,6 +401,18 @@ body{
         font-weight: 600;
         line-height: 36.4px;
         letter-spacing: -0.01em;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /* story */
+    .story-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .story-right p{
+        text-align: center;
     }
 }
 
