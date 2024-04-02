@@ -119,6 +119,76 @@ body{
     text-align: center;
 }
 
+/* feature section */
+.feature{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px 120px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.feature-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black-color);
+}
+.feature-desc{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.other-feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.feature-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #ffffff;
+    max-width: calc(100%/3.5);
+    padding: 40px 30px 40px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.feature-div h1{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36.4px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--black-color);
+}
+.feature-div p{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black-color);
+}
+.feature-div a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--green-color);
+}
+
 @media screen and (max-width: 815px) {
     /* nav */
     .nav-logo-text{
@@ -140,6 +210,18 @@ body{
     }
 }
 
+@media screen and (max-width: 780px){
+
+    /* feature */
+    .other-feature{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-div{
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 430px) {
     .nav-primary-btn{
         display: none;
@@ -151,5 +233,16 @@ body{
     .hero-desc{
         font-size: 16px;
         line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 395px){
+
+    /* feature */
+    .feature{
+        padding: 60px 30px 60px 30px;
+    }
+    .other-feature{
+        gap: 30px;
     }
 }
