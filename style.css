@@ -189,6 +189,69 @@ body{
     color: var(--green-color);
 }
 
+/* stats section */
+.stats{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px 120px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.stats-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black-color);
+}
+.stats-desc{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.other-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.stats-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #fff;
+    padding: 48px 16px 48px 16px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 4px solid #F2BFAF;
+    width: calc(100%/3);
+}
+.stats-div h1{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black-color);
+}
+.stats-div p{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+    color: var(--black-color);
+}
+
 @media screen and (max-width: 815px) {
     /* nav */
     .nav-logo-text{
@@ -213,12 +276,35 @@ body{
 @media screen and (max-width: 780px){
 
     /* feature */
+    .feature{
+        padding: 80px 30px 80px 30px;
+    }
     .other-feature{
         flex-direction: column;
         gap: 20px;
     }
     .feature-div{
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 755px){
+    
+    /* stats */
+    .stats{
+        padding: 80px 30px 80px 30px;
+    }
+    .other-stats{
+        flex-wrap: wrap;justify-content: center;
+    }
+    .stats-div{
+        width: calc(100%/2.5);
+    }
+    .stats-div h1{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        letter-spacing: -0.01em;
     }
 }
 
@@ -244,5 +330,10 @@ body{
     }
     .other-feature{
         gap: 30px;
+    }
+
+    /* stats */
+    .stats{
+        padding: 60px 30px 60px 30px;
     }
 }
