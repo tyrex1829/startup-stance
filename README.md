@@ -1,4 +1,8 @@
-Live link - https://startup-stance-ui.vercel.app/
+# Live link
+
+https://startup-stance-ui.vercel.app/
+
+# Description
 
 Startup Stance is an intuitive UI designed specifically for agencies specializing in crafting dynamic landing pages for small startups.
 
