@@ -11,6 +11,7 @@
 :root{
     --black-color: #2D2D2D;
     --green-color: #009379;
+    --yellow-bg-color: #F8D57E;
 }
 
 body{
@@ -482,6 +483,40 @@ body{
     margin-left: -180px;
 }
 
+/* cta section */
+.cta-section{
+    background-color: var(--yellow-bg-color);
+}
+.cta{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.cta-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black-color);
+}
+.cta-desc{
+    font-family: Mulish;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 40px;
+}
+.cta-img img{
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1136px){
 
     /* story */
@@ -508,6 +543,79 @@ body{
     }
     .team-div h1{
         font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 930px){
+
+    /* cta */
+    .cta-img img{
+        width: 806.4px;
+        height: 491.4px;
+    }
+}
+
+@media screen and (max-width: 830px){
+
+    /* cta */
+    .cta{
+        padding: 50px 30px 100px 30px;
+    }
+    .cta-img img{
+        width: 716.8px;
+        height: 436.8px;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+    /* cta */
+    .cta-img img{
+        width: 627.2px;
+        height: 382.2px;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    /* cta */
+    .cta-img img{
+        width: 537.6px;
+        height: 327.6px;
+    }
+
+}
+
+@media screen and (max-width: 545px){
+
+    /* cta */
+    .cta-img img{
+        width: 448px;
+        height: 273px;
+    }
+}
+
+@media screen and (max-width: 461px){
+
+    /* cta */
+    .cta{
+        padding: 30px 30px 60px 30px;
+    }
+    .cta-title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .cta-desc{
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .cta-img img{
+        width: 358.4px;
+        height: 218.4px;
     }
 }
 
