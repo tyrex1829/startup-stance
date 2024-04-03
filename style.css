@@ -419,6 +419,69 @@ body{
     color: var(--green-color);
 }
 
+/* newsletter section */
+.newsletter-section{
+    padding: 0 30px 120px 30px;
+}
+.newsletter{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 120px 60px 120px;
+    background-color: #E5F4F2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+}
+.newsletter-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: var(--black-color);
+}
+.newsletter-desc{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+.newsletter form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-email{
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 16px 40px 16px 20px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2B2B2B;
+    width: 440px;
+}
+.newsletter-primary-btn{
+    background-color: var(--green-color);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 16px 50px 16px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin-left: -180px;
+}
+
 @media screen and (max-width: 1136px){
 
     /* story */
@@ -482,6 +545,14 @@ body{
     .feature-div{
         max-width: 100%;
     }
+
+    /* newsletter */
+    .newsletter-section{
+        padding: 0 30px 100px 30px;
+    }
+    .newsletter{
+        padding: 60px;
+    }
 }
 
 @media screen and (max-width: 755px){
@@ -513,6 +584,38 @@ body{
     }
     .story-right p{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 525px){
+
+    /* newsletter */
+    .newsletter-section{
+        padding: 30px 30px 60px 30px;
+    }
+    .newsletter{
+        padding: 40px 27.5px;
+    }
+    .newsletter-title{
+        color: var(--black-color);
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .newsletter form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .newsletter-email{
+        width: 260px;
+    }
+    .newsletter-primary-btn{
+        margin-left: 0;
+        width: 260px;
     }
 }
 
@@ -551,5 +654,20 @@ body{
     /* stats */
     .stats{
         padding: 60px 30px 60px 30px;
+    }
+}
+
+@media screen and (max-width: 368px){
+
+    /* newsletter */
+    .newsletter-section{
+        padding: 30px 10px 60px 10px;
+    }
+    .newsletter-email{
+        width: 220px;
+    }
+    .newsletter-primary-btn{
+        margin-left: 0;
+        width: 220px;
     }
 }
